@@ -18,3 +18,9 @@
 >* == 值相等
 >* m 代表 regular expression match： 正则表达式匹配
 
+### 2. 一个命令行
+
+>* % perl -p -i -e 's/sysread/read/' file
+>* -p 文件的每一行进行查找和替换
+>* -i 将替换写回文件
+>* -e 将整个程序接在命令后边
