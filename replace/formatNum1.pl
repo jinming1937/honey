@@ -4,7 +4,7 @@
 #
 
 $num1 = 1234567890;
-$num1 =~ s/(?=(\d{3})+(?!\d))/,/g; # 注意这里要加g,
+$num1 =~ s/(?<=\d)(?=(\d\d\d)+$)/,/g;
 print "The US population is $num1\n";
 
 # 
@@ -12,7 +12,7 @@ print "The US population is $num1\n";
 #
 
 $num2 = 1234567890;
-$num2 =~ s/(?<=\d)(?=(\d\d\d)+$)/,/g;
+$num2 =~ s/(?=(\d{3})+(?!\d))/,/g; # 注意这里要加g,
 print "The US population is $num2\n";
 
 #
