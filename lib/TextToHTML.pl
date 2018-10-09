@@ -1,9 +1,9 @@
 undef $/;    # 进入“文件读取”模式
 $text = <>;  # 读入命令行中指定的第一个文件
 
-$text =~ $/&/&amp;/g;
-$text =~ $/</&lt;/g;
-$text =~ $/>/&gt;/g;
+$text =~ $/and/&amp;/g;
+$text =~ $/lt/&lt;/g;
+$text =~ $/gt/&gt;/g;
 
 $text =~ s/^\s*$/<p>/mg;
 
